@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MuhammadRZ Profil</title>
+    <meta name="description" content="MuhammadRZ - Linktree, Neumorphism Soft UI Design. ">
+<meta name="keywords" content="Linktree, Bio Link, Template, neumorphism UI, Theme, Codepen, GitHub">
+<meta name="robots" content="index, follow">
+<link rel="stylesheet" href="main.css">
+   <link rel="shortcut icon" href="https://i.pinimg.com/originals/23/02/9d/23029dae9def1eac163f1c92d5f7c273.jpg"
+</head>
+
+<body>
+  
+  <div class="container">
+    <header class="heamder">
+      <img src="https://i.ibb.co/Hh7nbv3/logo-link.png" width= 125px; height= 90px;>
+      <h1>MuhammadRZ</h1>
+    </header>
+    <main class="btn-tree">
+        <button class="btn-link" onclick="location.href='https://instagram.com/muhammadrz9999'">Instagram</button>
+        <button class="btn-link" onclick="location.href='https://www.youtube.com/channel/UCzE4B4BFwiL2O3sHRgXGOxw'">YouTube</button>
+        <button class="btn-link" onclick="location.href='https://api.whatsapp.com/send/?phone=+6287812790970&text&app_absent=0'">WhatsApp</button>
+        <button class="btn-link" onclick="location.href='https://t.me/Rasahngojeneng'">Telegram</button>
+    </main>
+    <footer>
+      Website dibuat oleh MuhammadRZ, Theme by <a href="https://www.instagram.com/muhammadrz9999">MuhammadRZ</a>
+    </footer>
+    <footer>
+       Copyright ©2017-2021 MUHAMMADRZ
+    </footer>
+     
+     <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script>
+  function addDarkmodeWidget() {
+    new Darkmode().showWidget();
+  }
+  window.addEventListener('load', addDarkmodeWidget);
+</script>
+     
+  </div>
+</body>
+</html>
