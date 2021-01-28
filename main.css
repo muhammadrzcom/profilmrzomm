@@ -1,45 +1,107 @@
-<!DOCTYPE html>
-<html lang="en">
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+     @import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
 
-<head>
-   <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MuhammadRZ Profil</title>
-    <meta name="description" content="MuhammadRZ - Linktree, Neumorphism Soft UI Design. ">
-<meta name="keywords" content="Linktree, Bio Link, Template, neumorphism UI, Theme, Codepen, GitHub">
-<meta name="robots" content="index, follow">
-<link rel="stylesheet" href="main.css">
-   <link rel="shortcut icon" href="https://i.pinimg.com/originals/23/02/9d/23029dae9def1eac163f1c92d5f7c273.jpg"
-</head>
+:root {
+    --bg-color:#EBECF0;
+    --color-w: #FFF;
+    --color-s: #BABECC;
+    --accent-color:#7E90F8;
+    --font: 'Poppins',sans-serif;
+    --feneumorphism: -2px -2px 5px #FFF, 2px 2px 5px #BABECC;
+    --feneumorphism-inset:inset 2px 2px 5px #BABECC, inset -5px -5px 10px #FFF;
+}
 
-<body>
-  
-  <div class="container">
-    <header class="heamder">
-      <img src="https://i.ibb.co/Hh7nbv3/logo-link.png" width= 125px; height= 90px;>
-      <h1>MuhammadRZ</h1>
-    </header>
-    <main class="btn-tree">
-        <button class="btn-link" onclick="location.href='https://instagram.com/muhammadrz9999'">Instagram</button>
-        <button class="btn-link" onclick="location.href='https://www.youtube.com/channel/UCzE4B4BFwiL2O3sHRgXGOxw'">YouTube</button>
-        <button class="btn-link" onclick="location.href='https://api.whatsapp.com/send/?phone=+6287812790970&text&app_absent=0'">WhatsApp</button>
-        <button class="btn-link" onclick="location.href='https://t.me/Rasahngojeneng'">Telegram</button>
-    </main>
-    <footer>
-      Website dibuat oleh MuhammadRZ, Theme by <a href="https://www.instagram.com/muhammadrz9999">MuhammadRZ</a>
-    </footer>
-    <footer>
-       Copyright ©2017-2021 MUHAMMADRZ
-    </footer>
-     
-     <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-<script>
-  function addDarkmodeWidget() {
-    new Darkmode().showWidget();
+
+body {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    display:flex;
+    font-size: 16px;
+    flex-direction: column;
+    font-family: var(--font);
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: -0.2px;
+    color: var(--color-s);
+  text-shadow: 1px 1px 1px var(--color-w);
+    background-color: var(--bg-color);
+}
+
+.container {
+  padding:50px;
+  max-width:1080px;
+  margin:0 auto;
+}
+
+  .fomto {
+	  width: 90px;
+	  height: 90px;
+	  background-image: url("https://www.pinterest.com/pin/687784174316017644/");
+	  background: var(--bg-color);
+	  background-size: cover;
+	  background-repeat: no-repeat;
+	  background-position: 50% 50%;
   }
-  window.addEventListener('load', addDarkmodeWidget);
-</script>
-     
-  </div>
-</body>
-</html>
+.heamder {
+  color: var(--color-s);
+  text-align: center;
+  margin-bottom:35px;
+}
+.heamder h1 {
+  font-family: 'Merienda One', cursive;
+  font-weight: 400;
+  font-size: 18px;
+}
+.btn-tree {
+  margin:20px 0;
+}
+.btn-link {
+    font-family: var(--font);
+    font-size:1em;
+    font-weight: 500;
+    border: 0;
+    outline: 0;
+    width:100%;
+    background-color:var(--bg-color);
+    color:var(--accent-color);
+    padding:10px 40px;
+    border-radius:12px;
+    min-width:190px;
+    margin-bottom:30px;
+    cursor: pointer;
+    text-shadow: 1px 1px 0 var(--color-w);
+    box-shadow: var(--feneumorphism);
+    transition:background-color 300ms ease-in-out;
+}
+
+.btn-link:hover {
+    box-shadow: var(--feneumorphism-inset);
+    
+}
+.btn-link:active {
+  box-shadow: var(--feneumorphism-inset);
+}
+.ngocok {
+	animation: ngocok-animation 4.72s ease infinite;
+	transform-origin: 50% 50%;
+  }
+@keyframes ngocok-animation {
+	 0% { transform:translate(0,0) }
+	1.78571% { transform:translate(5px,0) }
+	3.57143% { transform:translate(0,0) }
+	5.35714% { transform:translate(5px,0) }
+	7.14286% { transform:translate(0,0) }
+	8.92857% { transform:translate(5px,0) }
+	10.71429% { transform:translate(0,0) }
+	100% { transform:translate(0,0) }
+  }
+
+footer {
+  text-align: center;
+}
+footer a{
+  color: var(--accent-color);
+  text-decoration: none;
+}
